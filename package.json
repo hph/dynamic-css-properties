@@ -1,6 +1,6 @@
 {
   "name": "dynamic-css-properties",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "CSS custom properties made dynamic.",
   "main": "dist/dynamic-css-properties.js",
   "repository": "https://github.com/hph/dynamic-css-properties",
