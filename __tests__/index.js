@@ -1,4 +1,4 @@
-import setCustomProperties from '../index';
+import setCustomProperties from '../src/index';
 
 // The tests do not run in the browser, so instead we mock the node and the
 // methods called by the tested function.

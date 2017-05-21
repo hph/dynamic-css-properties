@@ -1,4 +1,4 @@
-import { camelToKebab } from '../utils';
+import { camelToKebab } from '../src/utils';
 
 test('camelToKebab', () => {
   expect(camelToKebab('camelCase')).toEqual('camel-case');
