@@ -1,8 +1,17 @@
 dynamic-css-properties
 ======================
 
-This library exposes a single function in order to dynamically set custom CSS
-properties ([CSS variables](https://www.w3.org/TR/css-variables/)).
+This tiny library exposes a single function in order to dynamically set custom
+CSS properties ([CSS variables](https://www.w3.org/TR/css-variables/)).
+
+### Features
+
+- Simple API - takes an object of properties and values to update and
+  automatically converts `camelCased` property names to `--kebab-case` for you.
+- Defaults to `document.documentElement`, i.e. the root node, but allows you to
+  specify a subnode to update instead (custom CSS properties follow the
+  standard cascading rules).
+- It doesn't do much, but it still feels like magic!
 
 ### Install
 
