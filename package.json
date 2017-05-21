@@ -1,0 +1,61 @@
+{
+  "name": "dynamic-css-properties",
+  "version": "0.1.0",
+  "description": "CSS custom properties made dynamic.",
+  "main": "dist/dynamic-css-properties.js",
+  "repository": "https://github.com/hph/dynamic-css-properties",
+  "author": "Haukur Páll Hallvarðsson <hph@hph.is>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel-node scripts/rollup.js",
+    "lint": "eslint --ignore-path=.gitignore .",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-jest": "^20.0.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.2.0",
+    "jest": "^20.0.3",
+    "rollup": "^0.41.6",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-uglify": "^2.0.0"
+  },
+  "dependencies": {
+    "uglify-es": "^3.0.10"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "plugins": [
+      "import"
+    ],
+    "env": {
+      "browser": true
+    },
+    "globals": {
+      "expect": true,
+      "test": true
+    },
+    "rules": {
+      "arrow-parens": [
+        0,
+        "as-needed"
+      ],
+      "import/no-extraneous-dependencies": 0,
+      "import/prefer-default-export": 0,
+      "space-before-function-paren": [
+        2,
+        "always"
+      ]
+    }
+  }
+}
