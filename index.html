@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      body {
+        color: var(--color);
+        background-color: var(--background-color);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <p>CSS custom properties are awesome.</p>
+    <button>Do stuff!</button>
+
+    <script src="./dist/dynamic-css-properties.js"></script>
+    <script>
+      document.querySelector('button').addEventListener('click', () => {
+        setCustomProperties({
+          color: 'hotpink',
+          backgroundColor: 'papayawhip',
+        });
+      });
+    </script>
+  </body>
+</html>
