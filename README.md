@@ -27,7 +27,7 @@ const setCustomProperties = require('dynamic-css-properties');
 Script tag (adds a `setCustomProperties` global):
 
 ```html
-<script src="https://unpkg.com/dynamic-css-properties/dist/dynamic-css-properties.min.js"></script>
+<script src="https://unpkg.com/dynamic-css-properties@0.1.1/dist/dynamic-css-properties.min.js"></script>
 ```
 
 #### Using the library
